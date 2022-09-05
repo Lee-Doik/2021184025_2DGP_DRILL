@@ -1,3 +1,5 @@
 hello
 HI
 2021184025 leedoik
+
+성적 100
