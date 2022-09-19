@@ -3,11 +3,12 @@ import turtle
 turtle.speed(0)
 count1 = 5
 count2 = 5
-y = 100
+y = -200
 
 while (count2 > 0):
     count1 = 5
-    x = 0
+    turtle.penup()
+    x = -220
     while (count1 > 0):
         turtle.goto(x,y)
         turtle.pendown()
