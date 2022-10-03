@@ -42,14 +42,13 @@ kpu_ground = load_image('TUK_GROUND.png')
 character = load_image('animation_sheet.png')
 
 running = True
-x = 800 // 2
-y = 600 // 2
+x, y = KPU_WIDTH // 2, KPU_HEIGHT // 2
 frame = 0
 dir = 0
 height = 0
 behavior = 300
 
-while running and 0 < x < 1280 and 0 < y < 1024:
+while running and 0 < x < 1280 and 0 < y 1024:
     clear_canvas()
     kpu_ground.draw(KPU_WIDTH // 2, KPU_HEIGHT // 2)
     character.clip_draw(frame * 100, behavior * 1, 100, 100, x ,  y)
@@ -60,6 +59,7 @@ while running and 0 < x < 1280 and 0 < y < 1024:
     x += dir * 5
     y += height * 5
     delay(0.01)
+
 
 close_canvas()
 
