@@ -12,8 +12,7 @@ class Grass:
 
 class Boy:
     def __init__(self):
-        self.x, self.y = randint(100,700), 90
-        self.frame = randint(0,7)
+
         self.image = load_image('run_animation.png')
 
     def update(self):
